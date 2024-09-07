@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tajtiattila/metadata/exif/exiftag"
-	"github.com/tajtiattila/metadata/testutil"
+	"github.com/superboomer/metadata/exif/exiftag"
+	"github.com/superboomer/metadata/testutil"
 )
 
 func TestDecode(t *testing.T) {

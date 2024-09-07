@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tajtiattila/metadata/mp4"
-	"github.com/tajtiattila/metadata/testutil"
+	"github.com/superboomer/metadata/mp4"
+	"github.com/superboomer/metadata/testutil"
 )
 
 func TestParse(t *testing.T) {

@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tajtiattila/metadata"
-	"github.com/tajtiattila/metadata/exif"
-	xjpeg "github.com/tajtiattila/metadata/jpeg"
-	"github.com/tajtiattila/metadata/testutil"
+	"github.com/superboomer/metadata"
+	"github.com/superboomer/metadata/exif"
+	xjpeg "github.com/superboomer/metadata/jpeg"
+	"github.com/superboomer/metadata/testutil"
 )
 
 func TestParse(t *testing.T) {
