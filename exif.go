@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tajtiattila/metadata/exif"
-	"github.com/tajtiattila/metadata/exif/exiftag"
+	"github.com/superboomer/metadata/exif"
+	"github.com/superboomer/metadata/exif/exiftag"
 )
 
 func FromExifBytes(p []byte) (*Metadata, error) {
@@ -48,6 +48,11 @@ func FromExif(x *exif.Exif) *Metadata {
 	if s, ok := x.Tag(exiftag.Model).Ascii(); ok {
 		m.Set(Model, s)
 	}
+
+	if s, ok := x.Tag(exiftag.Artist).Ascii(); ok {
+		m.Set(Model, s)
+	}
+
 	return m
 }
 

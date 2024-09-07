@@ -51,6 +51,8 @@ type Metadata struct {
 	// Recording equipment manufacturer and model name/number name
 	Make, Model string
 
+	Artist string
+
 	// Attr holds metadata attributes as strings.
 	Attr map[string]string
 }
@@ -90,6 +92,8 @@ const (
 
 	// XMP Rating (integer), -1: rejected, 0: unrated, 1..5: user rating
 	Rating = "Rating"
+
+	Artist = "Artist"
 
 	// recording equipment manufacturer and model name/number name
 	Make  = "Make"
