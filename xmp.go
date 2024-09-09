@@ -43,6 +43,8 @@ var xmpAttr = []struct {
 
 	{Make, xmpString(xmp.Make)},
 	{Model, xmpString(xmp.Model)},
+
+	{Creator, xmpString(xmp.Creator)},
 }
 
 func xmpString(a xmp.StringFunc) func(x *xmp.Meta) (string, bool) {

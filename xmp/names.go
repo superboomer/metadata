@@ -18,6 +18,8 @@ var (
 
 	Rating = tagInt("xmp:Rating")
 
+	Creator = tagString("xmp:Creator")
+
 	DateTimeOriginal = tagString("exif:DateTimeOriginal")
 
 	GPSLatitude  = tagCoord("exif:GPSLatitude", 'N', 'S')
