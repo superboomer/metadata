@@ -93,8 +93,7 @@ const (
 	// XMP Rating (integer), -1: rejected, 0: unrated, 1..5: user rating
 	Rating = "Rating"
 
-	Artist = "Artist"
-	// Artist analog for XMP mp4
+	// Artist from exif (for jpeg) or Creator from xmp
 	Creator = "Creator"
 
 	// recording equipment manufacturer and model name/number name
@@ -266,6 +265,7 @@ var updateValue = map[string]updateFunc{
 	Rating:           func(m *Metadata, v string) { updateInt(&m.Rating, v) },
 	Make:             func(m *Metadata, v string) { m.Make = v },
 	Model:            func(m *Metadata, v string) { m.Model = v },
+	Creator:          func(m *Metadata, v string) { m.Creator = v },
 }
 
 func updateTime(p *Time, v string) {
