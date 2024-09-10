@@ -50,7 +50,7 @@ func FromExif(x *exif.Exif) *Metadata {
 	}
 
 	if s, ok := x.Tag(exiftag.Artist).Ascii(); ok {
-		m.Set(m.Creator, s)
+		m.Set(Creator, s)
 	}
 
 	return m
