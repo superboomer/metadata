@@ -18,7 +18,7 @@ var (
 
 	Rating = tagInt("xmp:Rating")
 
-	Creator = tagString("xmp:Creator")
+	Nickname = tagString("xmp:Nickname")
 
 	DateTimeOriginal = tagString("exif:DateTimeOriginal")
 

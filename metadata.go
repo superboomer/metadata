@@ -93,7 +93,7 @@ const (
 	// XMP Rating (integer), -1: rejected, 0: unrated, 1..5: user rating
 	Rating = "Rating"
 
-	// Artist from exif (for jpeg) or Creator from xmp
+	// Artist from exif (for jpeg) or Nickname from xmp
 	Creator = "Creator"
 
 	// recording equipment manufacturer and model name/number name
